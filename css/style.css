@@ -1,14 +1,82 @@
+ /*---------------------------------------------------------------------------\
+@author: Josh Hoeg
+@company: Raptor Solutions & Veltio Academy
+
+The CSS file below is seperated into clear and definied sections all of the code
+below was written by myself and does not infringe on any copyrighted material.
+It was created for a company called Boxed Smile, and if for any reason it is used
+for other reasons.... Well haha not much I can do about it so go for it. S/O
+opensource.
+\---------------------------------------------------------------------------*/
+
+
+ /*---------------------------------------------------------------------------\
+|                                   Default                                   |
+\---------------------------------------------------------------------------*/
 *{
   font-family: 'Roboto Slab', serif;
 }
 body{
   padding-top: 100px;
 }
-#header{
-  height: 916px;
-  background-image: url("images/headerbg.png");
+@media only screen and (max-width: 768px) {
+  body{
+    padding-top: 50px;
+  }
+}
+
+
+
+ /*---------------------------------------------------------------------------\
+|                        Sections and Backgrounds                             |
+\---------------------------------------------------------------------------*/
+section{
+  width: 100%;
   background-size: cover;
 }
+
+#header{
+  height: 916px;
+  background-image: url("../images/bg/headerbg.png");
+}
+#what{
+  height: 800px;
+  background: #1795FA;
+}
+#blog{
+  height: 900;
+  background: #EDFAFF;
+}
+#contact{
+  height: 1920px;
+  background-image: url("../images/bg/contactbg.png");
+}
+#footer{
+  height: 350px;
+  background: #C6EFFF;
+}
+@media only screen and (max-width: 768px) {
+  #header{
+    height: 600px;
+    background-image: url("../images/bg/headermobilebg.png");
+  }
+  #what{
+    height: 1752px;
+    background-image: url("../images/bg/whatmobilebg.png");
+  }
+  #blog{
+    height: 1400px;
+  }
+  #contact{
+    height: 2221px;
+    background-image: url("../images/bg/contactmobilebg.png");
+  }
+}
+
+
+
+
+
 
 .navbar-custom {
   background: #2C3E50;
