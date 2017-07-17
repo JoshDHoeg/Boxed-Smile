@@ -19,6 +19,7 @@ opensource.
 }
 body{
   padding-top: 100px;
+  overflow-x: hidden;
 }
 h1{
   padding: 20px;
@@ -55,6 +56,86 @@ h1{
   .divider{
     width: 30px;
   }
+  .bubble{
+    display: none;
+  }
+}
+
+
+
+
+.bubble{
+  position: absolute;
+  z-index: 10px;
+}
+#bbl-1{
+  left: -50px;
+}
+#bbl-2{
+  left:50px;
+  padding-top: 220px;
+}
+#bbl-3{
+  left:120px;
+  margin-top: -100px;
+}
+#bbl-4{
+  right: -50px;
+}
+#bbl-5{
+  right:50px;
+  padding-top: 220px;
+}
+#bbl-6{
+  right:120px;
+}
+#bbl-7{
+  right: 50%;
+  padding-top:40px;
+}
+#bbl-8{
+  right: -56px;
+}
+#bbl-9{
+  right: -20px;
+}
+#bbl-10{
+  right: -56px;
+  margin-top: -200px;
+}
+#bbl-11{
+  left: -64px
+}
+#bbl-12{
+  left: 64px;
+  margin-top: -100px;
+}
+#bbl-13{
+  left: 200px;
+  margin-top: 128px;
+}
+#bbl-14{
+  right: 32px;
+  margin-top: -32px;
+  z-index: 20;
+}
+#bbl-15{
+  right: 64px;
+  margin-top: 100px;
+}
+#bbl-16{
+  right: -32px;
+}
+#bbl-17{
+  left: -64px
+}
+#bbl-18{
+  left: 64px;
+  margin-top: 250px;
+}
+#bbl-19{
+  left: 200px;
+  margin-top: 128px;
 }
 
 
