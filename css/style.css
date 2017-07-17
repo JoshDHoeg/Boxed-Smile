@@ -15,16 +15,26 @@ opensource.
 \---------------------------------------------------------------------------*/
 *{
   font-family: 'Roboto Slab', serif;
+  text-align: center;
 }
 body{
   padding-top: 100px;
+}
+.head h1{
+  padding: 20px;
+  margin: 0;
+  font-size: 56px;
 }
 @media only screen and (max-width: 768px) {
   body{
     padding-top: 50px;
   }
 }
-
+.shadow{
+  -moz-box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
+}
 
 
  /*---------------------------------------------------------------------------\
@@ -44,15 +54,18 @@ section{
   background: #1795FA;
 }
 #blog{
-  height: 900;
+  height: 500px;
+  background: #EDFAFF;
+}
+#testimonials{
   background: #EDFAFF;
 }
 #contact{
-  height: 1920px;
+  height: 1240px;
   background-image: url("../images/bg/contactbg.png");
 }
 #footer{
-  height: 350px;
+  height: 150px;
   background: #C6EFFF;
 }
 @media only screen and (max-width: 768px) {
@@ -65,10 +78,9 @@ section{
     background-image: url("../images/bg/whatmobilebg.png");
   }
   #blog{
-    height: 1400px;
+    height: 700px;
   }
   #contact{
-    height: 2221px;
     background-image: url("../images/bg/contactmobilebg.png");
   }
 }
@@ -77,27 +89,43 @@ section{
 
 
 
-
+ /*---------------------------------------------------------------------------\
+|                                 navbar                                      |
+\---------------------------------------------------------------------------*/
+.social-icon img{
+  width: 24px;
+}
+#logo{
+  font-size: 36px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -135px !important;  /* 50% of your logo width */
+  display: block;
+}
+#logo img{
+    width: 90px;
+}
 .navbar-custom {
-  background: #2C3E50;
+  background: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
 }
 .navbar-custom .navbar-brand {
-  color: white;
+  color: #0D4C86;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: white;
+  color: #0D4C86;
 }
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
-  color: white;
+  color: #0D4C86;
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #18BC9C;
@@ -107,26 +135,26 @@ section{
   color: white;
 }
 .navbar-custom .navbar-nav li.active a {
-  color: white;
-  background: #18BC9C;
+  color: #0D4C86;
+  background: #ffffff;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-  color: white;
-  background: #18BC9C;
+  color: #0D4C86;
+  background: #ffffff;
 }
 .navbar-custom .navbar-toggle {
-  color: white;
+  color: #0D4C86;
   text-transform: uppercase;
   font-size: 10px;
-  border-color: white;
+  border-color: #0D4C86;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
-  color: white;
-  border-color: #18BC9C;
+  background-color: #ffffff;
+  color: #0D4C86;
+  border-color: #0D4C86;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -147,4 +175,167 @@ section{
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
+}
+@media only screen and (max-width: 768px) {
+  #logo img{
+    width: 64px;
+  }
+}
+
+ /*---------------------------------------------------------------------------\
+|                                header                                       |
+\---------------------------------------------------------------------------*/
+#header .contents{
+  padding-top:120px;
+  font-size: 26px;
+  text-align: center;
+}
+input{
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+#mce-EMAIL{
+  background: #ffffff;
+  border: 3px solid #ffffff;
+}
+.subscribe{
+  background: #029B4B;
+  border: none;
+  color: #ffffff;
+  border: 3px solid #029B4B;
+  transition: 0.5s;
+}
+.subscribe:hover{
+  color: #ffffff;
+  background: #1795FA;
+  border: 3px solid #ffffff;
+  transition: 0.5s;
+}
+#header .email-grab{
+  background: #1795FA;
+  padding: 30px;
+}
+#header .email-grab h1{
+  color: #ffffff;
+  padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+  #header .contents{
+    padding-top: 200px;
+  }
+  #header .contents .email-grab{
+    max-width: 75%;
+  }
+  #header .contents .email-grab h1{
+    font-size: 28px;
+    display: block;
+    margin: auto;
+  }
+  #header .contents .email-grab input{
+    font-size: 22px;
+  }
+  .navbar-brand{
+    font-size: 32px !important;
+  }
+}
+
+
+
+
+ /*---------------------------------------------------------------------------\
+|                                 what section                                |
+\---------------------------------------------------------------------------*/
+#what h1{
+  color: #ffffff;
+  padding: 50px;
+}
+#what .contents{
+  padding-top: 40px;
+}
+#what .card{
+  background: #ffffff;
+  margin: 10px;
+  padding: 40px 10px 20px 10px;
+  height: 400px;
+}
+#what .card h1{
+  padding: 20px 0 20px 0;
+}
+#what .card p{
+  font-size: 20px;
+  color: #5E5E5E;
+  padding: 20px 0 10px 0;
+}
+@media only screen and (max-width: 768px) {
+  #what .card{
+    margin: 20px 0 20px 0;
+  }
+  #what h1{
+    padding-top: 150px;
+  }
+}
+
+
+
+
+ /*---------------------------------------------------------------------------\
+|                                 blog section                                |
+\---------------------------------------------------------------------------*/
+#blog .blog_rss{
+  padding-top: 100px !important;
+}
+
+
+
+
+
+#testimonials .social-icon{
+  display: inline;
+  padding: 20px;
+}
+#testimonials .social-icon img{
+  width: 40px;
+}
+#testimonials .row{
+  padding-top: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .testimonial{
+    padding: 20px;
+  }
+}
+
+
+.contact_form{
+  padding-top: 500px;
+}
+.contact_form input{
+  margin: 15px 0 15px 0;
+  height: 40px;
+  border: none;
+}
+.contact_form textarea{
+  width: 100%;
+  margin: 15px 0 15px 0;
+  border: none;
+}
+
+
+
+
+.footer_logo{
+  float: left;
+  display: inline;
+}
+#footer .footer_socials{
+  padding-top: 60px;
+}
+#footer .social-icon img{
+  width: 30px;
+}
+#footer .social-icon{
+  display: inline;
+  padding: 10px;
+  float: right;
 }
