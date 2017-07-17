@@ -310,15 +310,11 @@ input{
 .contact_form{
   padding-top: 500px;
 }
-.contact_form input{
+.input{
+  border-radius: 0 !important;
+  border: 0 !important;
   margin: 15px 0 15px 0;
   height: 40px;
-  border: none;
-}
-.contact_form textarea{
-  width: 100%;
-  margin: 15px 0 15px 0;
-  border: none;
 }
 
 
