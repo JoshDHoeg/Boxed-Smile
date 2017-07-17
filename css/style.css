@@ -20,21 +20,43 @@ opensource.
 body{
   padding-top: 100px;
 }
-.head h1{
+h1{
   padding: 20px;
   margin: 0;
   font-size: 56px;
 }
-@media only screen and (max-width: 768px) {
-  body{
-    padding-top: 50px;
-  }
+.head{
+  padding-top: 50px;
+}
+.head h1{
+  margin-top: -50px;
 }
 .shadow{
   -moz-box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
   -webkit-box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
   box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
 }
+.divider{
+  height: 5px;
+  width: 100px;
+  background-color: #17FC84;
+}
+.divider-right{
+  margin-top: -5px;
+  float: right;
+}
+.divider-left{
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  body{
+    padding-top: 50px;
+  }
+  .divider{
+    width: 30px;
+  }
+}
+
 
 
  /*---------------------------------------------------------------------------\
@@ -190,6 +212,7 @@ section{
   font-size: 26px;
   text-align: center;
 }
+
 input{
   width: 100%;
   margin: 5px;
@@ -246,9 +269,9 @@ input{
  /*---------------------------------------------------------------------------\
 |                                 what section                                |
 \---------------------------------------------------------------------------*/
-#what h1{
+#what .head{
+  padding-top: 100px;
   color: #ffffff;
-  padding: 50px;
 }
 #what .contents{
   padding-top: 40px;
@@ -271,7 +294,7 @@ input{
   #what .card{
     margin: 20px 0 20px 0;
   }
-  #what h1{
+  #what .head{
     padding-top: 150px;
   }
 }
@@ -290,6 +313,9 @@ input{
 
 
 
+ /*---------------------------------------------------------------------------\
+|                         testimonials section                                |
+\---------------------------------------------------------------------------*/
 #testimonials .social-icon{
   display: inline;
   padding: 20px;
@@ -307,7 +333,10 @@ input{
 }
 
 
-.contact_form{
+ /*---------------------------------------------------------------------------\
+|                              contact section                                |
+\---------------------------------------------------------------------------*/
+#contact .head{
   padding-top: 500px;
 }
 .input{
@@ -320,6 +349,9 @@ input{
 
 
 
+ /*---------------------------------------------------------------------------\
+|                               footer section                                |
+\---------------------------------------------------------------------------*/
 .footer_logo{
   float: left;
   display: inline;
