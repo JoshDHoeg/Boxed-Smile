@@ -30,6 +30,8 @@
 </head>
 <body>
 
+  <div id="load_screen"><img class="bubble bubble-animated infinite tada" id="load-img" src="images/bubbles/bbl-lg-dark-1.png"></div>
+
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -285,9 +287,6 @@
   </section>
 
 
-
-
-
   <!-- Bootstrap Core JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -297,6 +296,23 @@
   <script>
                             new WOW().init();
 </script>
+
+  <!--Load screen js-->
+  <script>
+  function onReady(callback) {
+      var intervalID = window.setInterval(checkReady, 2000);
+      function checkReady() {
+          if (document.getElementsByTagName('body')[0] !== undefined) {
+              window.clearInterval(intervalID);
+              callback.call(this);
+          }
+      }
+  }
+
+  onReady(function () {
+      $('#load_screen').fadeOut('slow',function(){$(this).remove();});
+  });
+  </script>
 
 
   <!--mailchimp js-->

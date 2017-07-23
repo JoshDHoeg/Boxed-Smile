@@ -20,6 +20,9 @@
 .animated.infinite {
   animation-iteration-count: infinite;
 }
+.bubble-animated.infinite {
+  animation-iteration-count: infinite;
+}
 
 .animated.hinge {
   animation-duration: 2s;
