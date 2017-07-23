@@ -56,9 +56,6 @@ h1{
   .divider{
     width: 30px;
   }
-  .bubble{
-    display: none;
-  }
 }
 
 
@@ -331,11 +328,6 @@ input{
   #header .contents .email-grab{
     max-width: 75%;
   }
-  #header .contents .email-grab h1{
-    font-size: 28px;
-    display: block;
-    margin: auto;
-  }
   #header .contents .email-grab input{
     font-size: 22px;
   }
@@ -345,6 +337,16 @@ input{
 }
 
 
+@media only screen and (max-width: 991px) {
+  #header .contents .email-grab h1{
+    font-size: 28px;
+    display: block;
+    margin: auto;
+  }
+  .bubble{
+    display: none;
+  }
+}
 
 
  /*---------------------------------------------------------------------------\
@@ -410,6 +412,9 @@ input{
 @media only screen and (max-width: 768px) {
   .testimonial{
     padding: 20px;
+    -moz-box-shadow: 0 0 0 rgba(0,0,0,0);
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
   }
 }
 
