@@ -125,7 +125,7 @@ h1{
   left: -64px
 }
 #bbl-12{
-  left: 64px;
+  left: 16px;
   margin-top: -100px;
 }
 #bbl-13{
@@ -391,6 +391,14 @@ input{
   font-size: 20px;
   color: #5E5E5E;
   padding: 20px 0 10px 0;
+}
+@media only screen and (min-width: 768px) {
+  #what .card p{
+    font-size: 16px;
+  }
+  #what .card{
+    margin: 0px;
+  }
 }
 @media only screen and (max-width: 768px) {
   #what .card{
